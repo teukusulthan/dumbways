@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Forms</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+
+    <img src="img/images.png" alt="" class="logo">
+
+    <nav class="navbar">
+      <ul>
+          <li><a href=""></a>Home</li>
+          <li><a href=""></a>My Project</li>
+      </ul>
+    </nav>
+
+    <button id="contact">Contact Me</button>
+  </header>
+  <div class="form-wrapper">
+    <div class="container">
+
+      <section class="form-title">
+          <h1>GET IN TOUCH</h1>
+      </section>
+
+      <section class="form-section">
+        <form class="form" action="submit">
+
+          <div class="form-items">
+            <label for="nama">Name</label>
+          <input type="text" name="" id="nama">
+          </div>
+
+          <div class="form-items">
+            <label for="email">Email</label>
+          <input type="email" name="" id="email">
+          </div>
+
+          <div class="form-items">
+            <label for="nomor">Phone Number</label>
+            <input type="tel">
+          </div>
+
+          <div class="form-items">
+            <label for="subject">Subject</label>
+            <select name="" id="subject">
+              <option selected disabled hidden> </option>
+              <option value="1">Back-end Webdev</option>
+              <option value="2">Frontend Webdev</option>
+            </select>
+          </div>
+          
+          <div class="form-items">
+            <label for="message">Your Message</label>
+          <textarea name="" id="message"></textarea>
+          </div>
+          <div class="button-container">
+            <button type="submit" id="submit">Submit</button>
+          </div>
+          
+        </form>
+      </section>
+    </div>
+  </div>
+  
+</body>
+</html>

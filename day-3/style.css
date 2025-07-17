@@ -1,0 +1,169 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #dce0e4;
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 0px 5%;
+  justify-content: flex-start;
+  background-color: white;
+}
+
+.logo {
+  height: 40px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.logo:hover {
+  scale: 1.1;
+  opacity: 0.8;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-left: 5%;
+}
+
+.navbar ul {
+  display: flex;
+  font-weight: 500;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.navbar li {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  list-style: none;
+  height: 75px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.navbar li:hover {
+  background-color: rgb(236, 236, 236);
+  scale: 1.1;
+}
+
+#contact {
+  font-size: 18px;
+  font-family: sans-serif;
+  display: inline-block;
+  margin-left: auto;
+  width: 100%;
+  max-width: 150px;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  color: white;
+  background-color: black;
+  padding: 7px 20px;
+  border-radius: 7px;
+  transition: 0.6s;
+}
+
+#contact:hover {
+  color: black;
+  background-color: rgb(255, 255, 255);
+}
+
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: calc(100vh - 75px);
+}
+
+.container {
+  margin: 80px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 600px;
+}
+
+.form-title {
+  font-size: 26px;
+  padding: 30px 100px;
+}
+
+.form-items {
+  width: 100%;
+  padding: 5px 0px;
+}
+
+.form-section {
+  padding-top: 50px;
+  width: 100%;
+}
+
+.form-items label {
+  font-size: medium;
+  display: block;
+  margin-bottom: 7px;
+  font-size: 20px;
+}
+
+.form-items input,
+.form-items select,
+.form-items textarea {
+  font-size: 20px;
+  padding: 15px;
+  position: relative;
+  outline: none;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 5px 10px rgb(204, 204, 204);
+
+}
+
+.form-items input,
+.form-items select {
+  height: 50px;
+}
+
+.form-items textarea {
+  resize: none;
+  height: 130px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: end;
+}
+
+#submit {
+  margin-top: 20px;
+  background-color: black;
+  color: white;
+  padding: 5px 30px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 18px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+#submit:hover {
+  background-color: rgb(51, 51, 51);
+}
+
+#subject {
+  padding-right: px;
+}
+

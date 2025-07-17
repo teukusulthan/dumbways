@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Forms</title>
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body id="body">
+    <header class="header">
+      <img src="assets/icons/Dumbways.png" alt="" class="logo" />
+
+      <nav class="navbar">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">My Project</a></li>
+        </ul>
+      </nav>
+
+      <button id="contact">Contact Me</button>
+    </header>
+
+    <div class="form-wrapper">
+      <div class="container">
+        <section class="form-title">
+          <h1>ADD MY PROJECT</h1>
+        </section>
+
+        <section class="form-section">
+          <form class="form" action="submit" id="form-submit">
+            <div class="form-items">
+              <label for="proname">Project Name</label>
+              <input type="text" name="project-name" id="proname" />
+            </div>
+
+            <div class="form-items" id="split-column">
+              <div class="date-field">
+                <label for="start-date">Start Date</label>
+                <input type="date" id="start-date" />
+              </div>
+              <div class="date-field">
+                <label for="end-date">End Date</label>
+                <input type="date" id="end-date" />
+              </div>
+            </div>
+
+            <div class="form-items">
+              <label for="desc">Description</label>
+              <textarea name="description" id="desc"></textarea>
+            </div>
+
+            <div class="technologies">
+              <label
+                ><input type="checkbox" id="tech-1" value="tech-1" /> Node
+                Js</label
+              >
+              <label
+                ><input type="checkbox" id="tech-2" value="tech-2" /> React
+                Js</label
+              >
+              <label
+                ><input type="checkbox" id="tech-3" value="tech-3" /> Next
+                Js</label
+              >
+              <label
+                ><input type="checkbox" id="tech-4" value="tech-4" />
+                TypeScript</label
+              >
+            </div>
+
+            <div class="form-items" id="upload-img">
+              <label for="uplimg">Upload Image</label>
+              <input type="file" id="uplimg" />
+            </div>
+
+            <div class="button-container">
+              <button type="submit" id="submit">Submit</button>
+            </div>
+          </form>
+        </section>
+      </div>
+    </div>
+
+    <div class="myproject-wrapper" id="project-wrapper">
+      <div class="myproject-head">
+        <h1>MY PROJECT</h1>
+      </div>
+      <div class="myproject-card-container" id="project-container"></div>
+    </div>
+
+    <div class="detail-wrapper" id="project-detail">
+      <div class="detail">
+        <div class="detail-header">
+          <h1>Dumbways Web App</h1>
+        </div>
+        <div class="detail-upper">
+          <img src="assets/images/TestingImage1.jpg" alt="" />
+          <div class="detail-info">
+            <div class="duration">
+              <div class="duration-header">
+                <h2>Duration</h2>
+              </div>
+              <p>12 Jan 2021 - 11 Feb 2021</p>
+              <p>1 Month</p>
+            </div>
+            <div class="tech-stack">
+              <div class="tech-header">
+                <h2>Technologies</h2>
+              </div>
+              <div class="tech-icons">
+                <img src="assets/icons/Nextjs.png" alt="Next.js logo" />
+                <img src="assets/icons/Reactjs.png" alt="React logo" />
+                <img src="assets/icons/Nodejs.png" alt="Node.js logo" />
+                <img src="assets/icons/Typescript.png" alt="Node.js logo" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="detail-lower">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+            magni laboriosam ad architecto itaque natus debitis ipsam minus
+            tenetur ex facere eius quasi ullam dignissimos labore aspernatur
+            provident, nobis rerum? Ea, excepturi quam a voluptatum consequatur
+            omnis eligendi rem in? Voluptatum quia non quae deleniti quaerat
+            officiis praesentium facere aliquid, hic iste molestiae labore illo
+            alias placeat, eius consequatur consequuntur! Sed quaerat fuga,
+            earum at provident maiores dolorem, molestias aut explicabo impedit,
+            possimus labore tempora laborum quis dicta fugit doloremque ea
+            praesentium molestiae amet asperiores. Facere, inventore est.
+            Accusamus, vitae! Exercitationem id eveniet in libero maiores sit
+            quia aperiam eos modi sapiente cumque vero eum quidem, esse ipsam
+            quod officiis nihil praesentium eaque voluptates explicabo
+            laboriosam consectetur iste. Commodi, sequi! Illo, asperiores
+            veritatis consequatur quisquam quod eos nobis et deleniti cum
+            assumenda magni soluta praesentium minima eaque ea alias possimus
+            necessitatibus? Incidunt corrupti vero iste magni illum, reiciendis
+            rerum eaque. Vitae delectus, repellat molestiae eligendi suscipit
+            quam consequatur sequi in odit obcaecati facere quae. Quibusdam, ab
+            dignissimos? Eligendi quam itaque possimus natus, eos obcaecati
+            maxime veritatis rerum, earum ratione nemo? Doo nobis
+            architectorporis, qui nihil consequuntur doloremque veritatis, ipsam
+            alias rerum cupiditate odit non ipsa quas inventore natus adipisci
+            vel culpa temporibus accusamus cumque at recusandae. Quae ad
+            repellat quidem necessitatibus ea ex itaque labore ducimus, error,
+            quibusdam explicabo, aspernatur voluptates facere. Molestiae, eaque
+            voluptates tempora placeat sapiente praesentium necessitatibus et
+            facere delectus amet saepe quisquam! Optio similique, est, nostrum
+            tempore natus nobis vero dolorum ipsa velit neque minus fuga,
+            consequuntur modi. Atque quae nemo aspernatur eaque maiores,
+            dolores, laudantium praesentium soluta voluptatibus accusantium quam
+            officia! Aut fugiat minus commodi labore temporibus iure
+            voluptatibus, perspiciatis perferendis libero officia nam eaque
+            obcaecati quidem voluptatem, provident suscipit impedit maiores sint
+            repellat corporis numquam! Cupiditate nulla eum expedita minus.
+          </p>
+        </div>
+        <button onclick="closeDetail()">Close Detail</button>
+      </div>
+    </div>
+
+    <script src="assets/scripts/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

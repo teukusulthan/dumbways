@@ -12,8 +12,6 @@ body {
 }
 
 .header {
-  display: flex;
-  align-items: center;
   padding: 0px 5%;
   justify-content: flex-start;
   background-color: white;
@@ -91,6 +89,7 @@ body {
   align-items: center;
   padding-bottom: 40px;
   padding: 0px 20%;
+  background-color: rgb(232, 232, 232);
 }
 
 .container {
@@ -153,7 +152,7 @@ body {
 }
 
 #submit {
-  margin-top: 20px;
+  margin-top: 40px;
   background-color: black;
   color: white;
   padding: 5px 30px;

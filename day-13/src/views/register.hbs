@@ -1,0 +1,40 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+
+    <div class="register-wrapper">
+      <div class="register-container">
+        <h1>Account Register</h1>
+        {{#if messages.error}}
+          <div class="alert alert-danger">
+            {{messages.error}}
+          </div>
+        {{/if}}
+        <form class="register-form" method="post" action="/register">
+          <label for="fullname">Full Name</label>
+          <input type="text" name="full_name" id="fullname" />
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" />
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" />
+          <button type="submit">Register</button>
+        </form>
+      </div>
+    </div>
+
+  </body>
+</html>

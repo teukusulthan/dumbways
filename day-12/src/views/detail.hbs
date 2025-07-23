@@ -1,0 +1,52 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Detail</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="detail-wrapper" id="project-detail">
+      <div class="detail">
+        <div class="detail-header">
+          <h1>{{project.project_name}}</h1>
+        </div>
+
+        <div class="detail-upper">
+          <img src="{{project.upload}}" alt="{{project.project_name}}" />
+          <div class="detail-info">
+            <div class="duration">
+              <div class="duration-header">
+                <h2>Duration</h2>
+              </div>
+              <p>{{project.start_date}} - {{project.end_date}}</p>
+            </div>
+
+            <div class="tech-stack">
+              <div class="tech-header">
+                <h2>Technologies</h2>
+              </div>
+              <div class="tech-icons">
+                {{#each project.techIcons}}
+                  <img src="/assets/icons/{{this}}.png" alt="{{this}}" />
+                {{/each}}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="detail-lower">
+          <p>{{project.description}}</p>
+        </div>
+
+        <a href="/project">
+          <button>Back to Project</button>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

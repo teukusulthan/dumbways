@@ -1,0 +1,77 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+
+    <header
+      class="header sticky-top bg-white d-flex align-items-center justify-content-between"
+    >
+      <img src="../assets/icons/Dumbways.png" alt="" class="logo" />
+
+      <nav class="navbar">
+        <ul>
+          <li><a href="/add-project">Home</a></li>
+          <li><a href="/project">My Project</a></li>
+        </ul>
+      </nav>
+
+      <button id="contact">Contact Me</button>
+    </header>
+
+    <div class="myproject-wrapper" id="project-wrapper">
+      <div class="myproject-head">
+        <h1>MY PROJECT</h1>
+      </div>
+
+      <div class="myproject-card-container" id="project-container">
+        {{#each projects}}
+          <div class="myproject-card" id="project-card">
+            <img
+              src="{{this.upload}}"
+              alt="{{this.project_name}} project image"
+            />
+            <div class="myproject-card-content">
+              <h2>{{this.project_name}}</h2>
+              <h3>Duration: {{this.start_date}} - {{this.end_date}}</h3>
+              <p>{{this.description}}</p>
+              <div class="myproject-card-content-tech">
+                <div class="myproject-card-content-tech">
+                  {{#each this.techIcons}}
+                    <img src="/assets/icons/{{this}}.png" alt="{{this}}" />
+                  {{/each}}
+                </div>
+              </div>
+              <div class="myproject-card-button" style="display: flex;">
+                <a class="card-button" href="/detail/{{this.id}}">
+                  <button type="button">Detail</button>
+                </a>
+
+                <form
+                  class="card-button"
+                  action="/delete/{{this.id}}"
+                  method="POST"
+                >
+                  <button type="submit">Delete</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        {{/each}}
+      </div>
+
+    </div>
+
+  </body>
+</html>

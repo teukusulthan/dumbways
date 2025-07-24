@@ -1,0 +1,28 @@
+{
+  "name": "personal-web",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "type": "module",
+  "author": "teukusulthan",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "body-parser": "^2.2.0",
+    "express": "^5.1.0",
+    "express-flash": "^0.0.2",
+    "express-session": "^1.18.2",
+    "flash": "^1.1.0",
+    "hbs": "^4.2.0",
+    "multer": "^2.0.2",
+    "path": "^0.12.7",
+    "pg": "^8.16.3",
+    "session": "^0.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
